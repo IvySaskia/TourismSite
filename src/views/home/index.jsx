@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../static/logo.svg';
+import logo from '../../assets/images/logo.svg';
 
 const Home = () => {
   return (
@@ -19,6 +19,7 @@ const Home = () => {
         </a>
       </header>
     </div>
+
   );
 };
 
