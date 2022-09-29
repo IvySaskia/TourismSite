@@ -1,12 +1,9 @@
 import React from "react";
 
-const ContactInfo
- = () => {
+const ContactInfo = () => {
   return (
-    <p>ContactInfo
-</p>
+    <p> ContactInfo </p>
   );
 };
 
-export default ContactInfo
-;
+export default ContactInfo;
