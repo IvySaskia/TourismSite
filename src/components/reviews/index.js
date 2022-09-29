@@ -1,8 +1,13 @@
 import React from "react";
 
-const Reviews = () => {
+const Reviews = ({ listReviews }) => {
+
   return (
-    <p> Reviews </p>
+    listReviews.map((_, index) => {
+      return (
+        <p key={ index }>Reviews { index }</p>
+      );
+    })
   );
 };
 
