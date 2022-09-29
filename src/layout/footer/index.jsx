@@ -1,8 +1,13 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ footerProps }) => {
+  const { titleSite, description, socialMedia } = footerProps;
   return (
-    <p>FOOTER</p>
+    <>
+      <p>FOOTER - { titleSite }</p>
+      <p>{ description }</p>
+      <p>{ socialMedia }</p>
+    </>
   );
 };
 
