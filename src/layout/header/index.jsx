@@ -1,8 +1,11 @@
 import React from "react";
+import Menu from "../../components/menu";
 
 const Header = () => {
-  return (
-    <p>HEADER</p>
+  return (<>
+      <p>HEADER</p>
+      <Menu />
+    </>
   );
 };
 
