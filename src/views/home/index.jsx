@@ -1,25 +1,24 @@
 import React from "react";
-import logo from '../../assets/images/logo.svg';
+import Slider from '../../components/slider';
+import TravelPackages from '../../views/travel-packages';
+import Destination from '../../views/destinations';
+import Contact from '../../views/contact';
+import Reviews from '../../components/reviews';
+import Awards from '../../components/awards';
+
+
 
 const Home = () => {
+  let listReviews = Array(5).fill();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-
+    <>
+      <Slider />
+      <TravelPackages />
+      <Destination />
+      <Contact />
+      <Reviews listReviews={listReviews} />
+      <Awards />
+    </>
   );
 };
 
