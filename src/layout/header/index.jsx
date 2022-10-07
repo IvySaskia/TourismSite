@@ -3,7 +3,7 @@ import Menu from "../../components/menu";
 
 const Header = () => {
   return (<>
-      <p>HEADER</p>
+      <p>TRAVELNET</p>
       <Menu />
     </>
   );
