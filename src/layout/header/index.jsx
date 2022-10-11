@@ -1,10 +1,22 @@
 import React from "react";
-import Menu from "../../components/menu";
+import MyMenu from "../../components/my-menu";
 
-const Header = () => {
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
+
+import Flag from 'react-flagkit';
+
+const Header = () => {  
   return (<>
-      <p>TRAVELNET</p>
-      <Menu />
+    <AppBar position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <MyMenu />
+          <Flag country="BO" />
+        </Toolbar>
+      </Container>
+    </AppBar>
     </>
   );
 };
