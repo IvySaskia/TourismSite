@@ -5,7 +5,7 @@ const MainLayout = ({ children }) => {
 
   const footerProps = {
     titleSite: 'TRAVELNET',
-    description: 'lorem ipsum',
+    description: 'Hecho con',
   };
 
   return (

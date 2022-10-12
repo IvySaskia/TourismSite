@@ -4,9 +4,11 @@ import SocialMedia from "../../components/social-media";
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Footer = ({ footerProps }) => {
   const { titleSite, description } = footerProps;
+
   return (
     <>
       <Box
@@ -35,8 +37,7 @@ const Footer = ({ footerProps }) => {
         >
           { titleSite }
         </Typography>
-        
-        <p>{ description }</p>
+        <p>{ description } <FavoriteIcon sx={{ pt: 1 }}/></p>
         <SocialMedia />
       </Box>
     </>
